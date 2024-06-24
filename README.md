@@ -6,9 +6,9 @@ Utilizes the [Autogen framework](https://microsoft.github.io/autogen/) for rapid
 
 ## Getting Started
 
-This project uses Poetry for dependency management and packaging. If you're not familiar with Poetry, it's a tool for Python that helps manage projects by tracking libraries, handling configuration, and packaging. Here's how to get started:
+This project uses pdm for dependency management and packaging. If you're not familiar with pdm, it's a tool for Python that helps manage projects by tracking libraries, handling configuration, and packaging. Here's how to get started:
 
-1.  **Install Poetry**: If you haven't installed Poetry yet, you can do so by following the instructions on the [official Poetry website](https://python-poetry.org/docs/#installation).
+1.  **Install pdm**: If you haven't installed pdm yet, you can do so by following the instructions on the [official pdm website](https://pdm-project.org/en/latest/).
 
 2.  **Clone the Repository**: Get a copy of the project on your local machine by cloning the repository.
 
@@ -18,16 +18,12 @@ This project uses Poetry for dependency management and packaging. If you're not 
 
         cd ai-agent-factory
 
-4.  **Install Dependencies**: Use Poetry to install the project dependencies. This command reads the `pyproject.toml` file and installs all necessary packages.
+4.  **Install Dependencies**: Use pdm to install the project dependencies. This command reads the `pyproject.toml` file and installs all necessary packages.
 
-        poetry install
-
-5.  **Activate the Virtual Environment**: To activate the project's virtual environment, run:
-
-        poetry shell
+        pdm install
 
 This step is crucial as it ensures that all commands and scripts are run within the context of your project's dependencies, avoiding conflicts with other projects.
 
 6.  **Run the Project**: Now that everything is set up, you can run the joke agent using:
 
-        poetry run python agents/joke.py
+        pdm run agents/jokes/joke-agent.py

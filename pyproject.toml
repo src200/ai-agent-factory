@@ -1,15 +1,20 @@
-[tool.poetry]
+[project]
 name = "ai-agent-factory"
 version = "0.1.0"
-description = ""
-authors = ["Challa Sharath <csharath@outlook.com>"]
+description = "Factory of AI agents for various tasks."
+authors = [
+    {name = "Challa Sharath", email = "csharath@outlook.com"},
+]
+dependencies = [
+    "pyautogen==0.2.29",
+    "python-dotenv>=1.0.1",
+    "autogenstudio==0.1.2",
+    "gpt-researcher==0.6.6",
+]
+requires-python = "==3.12.0"
 readme = "README.md"
+license = {text = "MIT"}
 
-[tool.poetry.dependencies]
-python = ">=3.9,<3.13"
-pyautogen = "^0.2.29"
-python-dotenv = "^1.0.1"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.pdm]
+distribution = false

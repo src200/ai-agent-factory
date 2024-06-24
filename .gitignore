@@ -1,2 +1,4 @@
 .env
 .cache
+.pdm-python
+__pycache__
